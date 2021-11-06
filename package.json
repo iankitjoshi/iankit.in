@@ -1,0 +1,28 @@
+{
+  "name": "iankit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "bootstrap": "^5.0.0-beta3",
+    "email-validator": "^2.0.4",
+    "emailjs-com": "^2.6.4",
+    "google-maps-react": "^2.0.6",
+    "is_js": "^0.9.0",
+    "mapbox-gl": "^2.2.0",
+    "next": "10.1.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-ga": "^3.3.0",
+    "react-map-gl": "^6.1.13",
+    "sass": "^1.32.11"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.7.0"
+  }
+}
