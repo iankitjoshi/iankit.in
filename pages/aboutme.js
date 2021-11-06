@@ -1,13 +1,28 @@
 import { Grid } from '@material-ui/core';
+import moment from 'moment'
 
 function About(){
+
+    function MonthToYears() {
+        let startDate = moment('03/2020', 'M/YYYY');
+        let currentDate = moment(new Date(), 'M/YYYY');
+        let diffMonths = currentDate.diff(startDate, 'months');
+
+        let year = diffMonths / 12 | 0
+        let month = diffMonths % 12
+
+        if (month) return `${year} ${year > 1 ? 'years' : 'year'} & ${month} ${month > 1 ? 'months' : 'month'}`
+
+        return `${year} ${year > 1 ? 'years' : 'year'}`
+    }
+
     return(
         <Grid container className="about-grid" >
             <Grid item xs={12} sm={12} md={7} lg={7} className="about-me-grid">
                 <h2 className="heading" >About Me</h2>
                 {/* <p className="min-heading" >My Profession...</p> */}
                 <p className="paragraph" >
-                    Yes, I'm a coder. I have one year of experience. 
+                    Yes, I'm a coder. I have {MonthToYears() || ''} of experience.
                     Currently, I'm working as a Full-Stack Developer in Chandigarh. 
                     which is where my passion for design and development converge. 
                     I've been developing applications and making Websites using Javascript, React, and Node. 
