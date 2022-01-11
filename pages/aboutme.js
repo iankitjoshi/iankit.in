@@ -23,7 +23,7 @@ function About(){
                 {/* <p className="min-heading" >My Profession...</p> */}
                 <p className="paragraph" >
                     Yes, I'm a coder. I have {MonthToYears() || ''} of experience.
-                    Currently, I'm working as a Full-Stack Developer in Chandigarh. 
+                    Currently, I'm working as a Senior Solution Engineer (ReactJS) at <a style={{color:'black',textDecoration:'none'}} href="https://deqode.com/" target="_blank" > Deqode</a>.
                     which is where my passion for design and development converge. 
                     I've been developing applications and making Websites using Javascript, React, and Node. 
                     I love to create something different like my imagination.         
